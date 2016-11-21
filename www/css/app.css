@@ -1,0 +1,40 @@
+body {
+      margin: 0px;
+    }
+  header {
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    margin-bottom: 10px;
+    background-color: red;
+    top: 0px;
+  }
+
+  .content {
+    margin-top: 50px;
+  }
+
+  .tile-2x, .tile-1x {
+    background-color: red;
+    float: left;
+    margin: 5px;
+    height: 150px;
+  }
+  .tile-2x {
+      width: calc(50% - 10px);
+      width: -webkit-calc(50% - 10px);
+      width: -moz-calc(50% - 10px);
+  }
+  .tile-1x {
+      width: calc(100% - 10px);
+      width: -webkit-calc(100% - 10px);
+      width: -moz-calc(100% - 10px);
+  }
+
+  .away-off {
+    background-color: red;
+  }
+
+  .away-on {
+    background-color: green;
+  }
