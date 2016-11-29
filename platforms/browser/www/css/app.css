@@ -1,14 +1,5 @@
-body {
-      margin: 0px;
-    }
-  header {
-    padding: 10px;
-    width: 100%;
-    position: fixed;
-    margin-bottom: 10px;
-    background-color: red;
-    top: 0px;
-  }
+
+  
 
   .content {
     margin-top: 50px;
@@ -37,4 +28,13 @@ body {
 
   .away-on {
     background-color: green;
+  }
+
+  .exercise.list-level1, .exercise.list-level2, .exercise.list-level3 {
+    display: none;
+    float: left;
+  }
+
+  .exercise.labels {
+    float: left;
   }

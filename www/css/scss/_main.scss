@@ -1,0 +1,31 @@
+body {
+      margin: 0px;
+      font-family: $font-primary;
+}
+
+header {
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    margin-bottom: 10px;
+    background-color: $color-red-main;
+    top: 0px;
+}
+
+.content {
+    margin-top: 50px;
+}
+
+
+// TEGELS
+.tile-2x, .tile-1x {
+    background-color: $color-green-main;
+    float: left;
+    margin: 5px;
+}
+.tile-2x {
+    @include tile-calc(50%);
+}
+.tile-1x {
+    @include tile-calc(100%);
+}

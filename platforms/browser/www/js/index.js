@@ -62,7 +62,8 @@ function onDeviceReady() {
     Stappenteller();
     Away();
     resizeTiles();
-
+    clickExercises();
+    ratioExercises();
 }
 
 function resizeTiles() {
@@ -72,12 +73,28 @@ function resizeTiles() {
         physicalScreenHeight = $(window).height();
     }
     var contentH = physicalScreenHeight - header;
-    $(".content").css("margin-top", header );
-    $(".content").css("height", contentH - header);
+    $(".content.resize").css("margin-top", header );
+    $(".content.resize").css("height", contentH - header);
 
     var content = $(".content").outerHeight(true);
     var divide = (content / 3) -10;
-    $(".tile-2x, .tile-1x").css("height", divide);
+    $(".tile-2x.resize, .tile-1x.resize").css("height", divide);
+}
+
+function clickExercises() {
+    $(".tile-1x.exercise.level").click(function() {
+        var lvl = $(this).attr('rel');
+        $(".exercise.labels").hide();
+        $(".exercise.list-"+lvl).show();
+    })
+}
+
+function ratioExercises() {
+    var width = $(".exercise.labels").width() - 10;
+    $(".tile-1x.exercise.item").css({
+        "width": width,
+        "height": width*(9/16)
+    })
 }
 
 function Stappenteller() {
@@ -100,20 +117,14 @@ function Stappenteller() {
 }
 
 function Away() {
-    console.log("away1");
     var storage = window.localStorage;
-    console.log("away1");
     if (!storage.getItem("away")) {
-        console.log("awayif1");
         storage.setItem("away", 0)
         jQuery(".tile-2x#away").addClass("away-off");
     } if (storage.getItem("away")) {
-        console.log("awayif2");
        if (storage.getItem("away") === "0") {
-           console.log("hahaha");
            jQuery(".tile-2x#away").addClass("away-off");
        } if (storage.getItem("away") === "1") {
-           console.log("balalala");
            jQuery(".tile-2x#away").addClass("away-on");
        }
     }

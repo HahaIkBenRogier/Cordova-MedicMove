@@ -1,0 +1,18 @@
+// Ik ben even weg
+.away-off {
+    background-color: $color-green-main;
+}
+
+.away-on {
+    background-color: $color-blue;
+}
+
+// Oefeningen
+ .exercise.list-level1, .exercise.list-level2, .exercise.list-level3 {
+    display: none;
+    float: left;
+  }
+
+  .exercise.labels {
+    float: left;
+  }

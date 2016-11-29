@@ -1,0 +1,64 @@
+/* line 1, scss/_main.scss */
+body {
+  margin: 0px;
+  font-family: Helvetica;
+}
+
+/* line 6, scss/_main.scss */
+header {
+  padding: 10px;
+  width: 100%;
+  position: fixed;
+  margin-bottom: 10px;
+  background-color: #E12532;
+  top: 0px;
+}
+
+/* line 15, scss/_main.scss */
+.content {
+  margin-top: 50px;
+}
+
+/* line 21, scss/_main.scss */
+.tile-2x, .tile-1x {
+  background-color: #1096AB;
+  float: left;
+  margin: 5px;
+}
+
+/* line 26, scss/_main.scss */
+.tile-2x {
+  width: calc(50% - 10px);
+  width: -webkit-calc(50% - 10px);
+  width: -moz-calc(50% - 10px);
+}
+
+/* line 29, scss/_main.scss */
+.tile-1x {
+  width: calc(100% - 10px);
+  width: -webkit-calc(100% - 10px);
+  width: -moz-calc(100% - 10px);
+}
+
+/* line 2, scss/_pages.scss */
+.away-off {
+  background-color: #1096AB;
+}
+
+/* line 6, scss/_pages.scss */
+.away-on {
+  background-color: #005882;
+}
+
+/* line 11, scss/_pages.scss */
+.exercise.list-level1, .exercise.list-level2, .exercise.list-level3 {
+  display: none;
+  float: left;
+}
+
+/* line 16, scss/_pages.scss */
+.exercise.labels {
+  float: left;
+}
+
+/*# sourceMappingURL=style.css.map */
