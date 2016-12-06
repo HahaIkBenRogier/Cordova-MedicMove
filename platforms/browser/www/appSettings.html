@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Hello World</title>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> 
+  </head>
+  <body>
+    <header>
+      <div class="button-back"><a href="appHome.html"> <i class="fa fa-chevron-left fa-2x"></i></a></div>
+      <div class="title"><h1>MedicMove</h1></div>
+      <div class="button-settings"><a href="appSettings.html"><i class="fa fa-cog fa-2x"></i></a></div>
+    </header>
+    <div class="content resize">
+      <div class="setting uiterlijk">
+        <h2>Uiterlijk</h2>
+        <div class="uiterlijk labels">
+          <div class="uiterlijk thema" id="thema1">
+            <h3>Thema 1</h3>
+          </div>
+          <div class="uiterlijk thema" id="thema2">
+            <h3>Thema 2</h3>
+          </div>
+          <div class="uiterlijk thema" id="thema3">
+            <h3>Thema 3</h3>
+          </div>
+        </div>
+      </div>
+      <div class="setting oefeningen">
+        <h2>Belastbaarheid oefeningen</h2>
+        <div class="oefeningen labels">
+          <div class="oefeningen level" rel="level1">
+            <h3>Licht belastbaar</h3>
+            <p>Patient kan blasjhfdjsofhsdjfhds</p>
+          </div>
+          <div class="oefeningen level" rel="level2">
+            <h3>Middel belastbaar</h3>
+            <p>Patient kan blasjhfdjsofhsdjfhds</p>
+          </div>
+          <div class="oefeningen level" rel="level3">
+            <h3>Hoog belastbaar</h3>
+            <p>Patient kan blasjhfdjsofhsdjfhds</p>
+          </div>
+        </div>
+      </div>
+      <div class="setting evenweg">
+        <h2>Contactgegevens - Even weg</h2>
+        <div class="evenweg data">
+            <h3>Op welke afdeling ligt u?</h3>
+            <select id="evenAfdeling">
+              <option value="a">Afdeling A</option>
+              <option value="b">Afdeling B</option>
+              <option value="c">Afdeling C</option>
+            </select>
+            <h3>Wat is uw achternaam?</h3>
+            <input type="text" id="evenwegAchternaam">
+            <h3>Op welk telefoonnummer kunnen we u bereiken?</h3>
+            <input type="tel" id="evenwegMobiel">
+            <button type="submit" id="evenwegSubmit">Gegevens opslaan</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script> 
+    <script type="text/javascript" src="js/index.js"></script>
+   
+  </body>
+</html>

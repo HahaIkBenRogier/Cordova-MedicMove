@@ -1,18 +1,75 @@
+// Home
+
+.tile-2x.home, .tile-1x.home {
+    margin: 10px;
+    padding: 0px;
+}
+
+.innerTile {
+    background-color: $color-main;
+    border-radius: 25px;
+    height: inherit;
+    margin: 0 auto;
+}
+
+.innerTile img {
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+p.innerTitle {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+div#steps .innerTile {
+    background-color: white;
+    border: solid thick $color-main;
+}
+
 // Ik ben even weg
 .away-off {
-    background-color: $color-green-main;
+    //background-color: $color-main;
 }
 
 .away-on {
-    background-color: $color-blue;
+    background-color: $color-main;
+}
+
+// Instellingen
+.oefeningen.level, .uiterlijk.thema, .evenweg.data {
+    margin: 10px;
+    padding: 5px;
+    background-color: $color-main;
+    border-radius: 25px;
+    color: white;
+}
+
+.uiterlijk.thema#thema1 {
+    background-color: #81d0d6;
+}
+.uiterlijk.thema#thema2 {
+    background-color: #f75a6a;
+}
+.uiterlijk.thema#thema3 {
+    background-color: #005882;
 }
 
 // Oefeningen
- .exercise.list-level1, .exercise.list-level2, .exercise.list-level3 {
-    display: none;
+.exercise.labels {
+   // display: none;
     float: left;
-  }
+}
 
-  .exercise.labels {
+.tile-1x.exercise.item {
+    background-image: url('https://placeholdit.imgix.net/~text?txtsize=144&txt=1920%C3%971080&w=1920&h=1080');
+    background-size: contain;
+}
+
+.exercise.list-level1 {
     float: left;
-  }
+}

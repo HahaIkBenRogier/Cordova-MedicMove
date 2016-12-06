@@ -1,20 +1,15 @@
 /// FONTS
 
-$font-primary: Helvetica;
-$font-secondary: Arial;
+$font-primary: 'Raleway';
 
 /// COLORS
 
-$color-red-main: #E12532;
-$color-red-support: #E4485B;
-$color-green-main: #1096AB;
-$color-green-support: #70E5D4;
-$color-blue: #005882;
+$color-main: #005882;
+$color-main: #f75a6a;
+$color-main: #81d0d6;
 
 /// MIXINS
 
 @mixin tile-calc($percent) {
-     width: calc(#{$percent} - 10px);
-     width: -webkit-calc(#{$percent} - 10px);
-     width: -moz-calc(#{$percent} - 10px);
+     width: calc(#{$percent} - 20px);
 }

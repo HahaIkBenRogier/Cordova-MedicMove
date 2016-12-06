@@ -59,7 +59,6 @@ function showModel() {
 
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
-    Stappenteller();
     Away();
     resizeTiles();
     clickExercises();
@@ -68,17 +67,20 @@ function onDeviceReady() {
 
 function resizeTiles() {
     var header = $("header").outerHeight(true);
-    var physicalScreenHeight = window.screen.height * window.devicePixelRatio;
-    if (device.model === "Chrome") {
-        physicalScreenHeight = $(window).height();
-    }
+    var physicalScreenHeight = $(window).height();
     var contentH = physicalScreenHeight - header;
     $(".content.resize").css("margin-top", header );
-    $(".content.resize").css("height", contentH - header);
+    $(".content.resize").css("height", contentH - header + 80);
 
     var content = $(".content").outerHeight(true);
-    var divide = (content / 3) -10;
+    var divide = (content / 3) - 60;
     $(".tile-2x.resize, .tile-1x.resize").css("height", divide);
+    var innerTileCalc = divide - ((25 / 100) * divide);
+    $(".innerTile.resize").css("height", innerTileCalc);
+    $(".innerTile.resize").css("width", innerTileCalc);
+
+    $(".innerTile.resize100Alt").css("height", "95%");
+    $(".innerTile.resize100Alt").css("width", "95%");
 }
 
 function clickExercises() {
@@ -90,31 +92,13 @@ function clickExercises() {
 }
 
 function ratioExercises() {
-    var width = $(".exercise.labels").width() - 10;
+    var width = $(".exercise.labels").width() - 30;
     $(".tile-1x.exercise.item").css({
         "width": width,
         "height": width*(9/16)
     })
 }
 
-function Stappenteller() {
-    if (device.platform === "Android" || device.platform === "iOS") {
-        function healthCheck() {
-            navigator.health.isAvailable(successCallback, errorCallback)
-        }
-        
-        function successCallback(available) {
-            alert("Feessie!!");
-            alert(available);
-        }
-        function errorCallback(err) {
-            alert("Neen");
-            alert(err);
-        }
-    } else {
-        jQuery(".tile-1x#steps").text(device.platform + " ondersteunt onze stappenteller niet..");
-    }
-}
 
 function Away() {
     var storage = window.localStorage;
