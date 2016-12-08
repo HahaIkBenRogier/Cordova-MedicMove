@@ -13,7 +13,7 @@
   <body>
     <header>
       <div class="button-back"><a href="appHome.html"> <i class="fa fa-chevron-left fa-2x"></i></a></div>
-      <div class="title"><h1>MedicMove</h1></div>
+      <div class="title"><img src="img/logo@4x.png" width="60%"></div>
       <div class="button-settings"><a href="appSettings.html"><i class="fa fa-cog fa-2x"></i></a></div>
     </header>
     <div class="content resize">
@@ -34,19 +34,20 @@
       <div class="setting oefeningen">
         <h2>Belastbaarheid oefeningen</h2>
         <div class="oefeningen labels">
-          <div class="oefeningen level" rel="level1">
+          <div class="oefeningen level" id="level1">
             <h3>Licht belastbaar</h3>
             <p>Patient kan blasjhfdjsofhsdjfhds</p>
           </div>
-          <div class="oefeningen level" rel="level2">
+          <div class="oefeningen level" id="level2">
             <h3>Middel belastbaar</h3>
             <p>Patient kan blasjhfdjsofhsdjfhds</p>
           </div>
-          <div class="oefeningen level" rel="level3">
+          <div class="oefeningen level" id="level3">
             <h3>Hoog belastbaar</h3>
             <p>Patient kan blasjhfdjsofhsdjfhds</p>
           </div>
         </div>
+        <button id="resetOefeningen" onclick="oefeningenReset()">Reset bekeken oefeningen</button>
       </div>
       <div class="setting evenweg">
         <h2>Contactgegevens - Even weg</h2>

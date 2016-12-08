@@ -1,31 +1,10 @@
 @font-face {
-	font-family: 'Kelson Sans';
-	src: url('../fonts/KelsonSans/KelsonSans-Light.eot');
-	src: url('../fonts/KelsonSans/KelsonSans-Light.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/KelsonSans/KelsonSans-Light.woff') format('woff'),
-		url('../fonts/KelsonSans/KelsonSans-Light.ttf') format('truetype');
-	font-weight: 300;
-	font-style: normal;
-}
+    font-family: 'quicksandbook';
+    src: url('../fonts/quicksand/quicksand_book-webfont.woff2') format('woff2'),
+         url('../fonts/quicksand/quicksand_book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
-@font-face {
-	font-family: 'Kelson Sans';
-	src: url('../fonts/KelsonSans/KelsonSans-Bold.eot');
-	src: url('../fonts/KelsonSans/KelsonSans-Bold.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/KelsonSans/KelsonSans-Bold.woff') format('woff'),
-		url('../fonts/KelsonSans/KelsonSans-Bold.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Kelson Sans';
-	src: url('../fonts/KelsonSans/KelsonSans-Regular.eot');
-	src: url('../fonts/KelsonSans/KelsonSans-Regular.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/KelsonSans/KelsonSans-Regular.woff') format('woff'),
-		url('../fonts/KelsonSans/KelsonSans-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
 }
 
 @import url('font-awesome.css')

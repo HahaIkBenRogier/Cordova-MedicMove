@@ -1,0 +1,215 @@
+@import url("font-awesome.css");
+@font-face {
+  font-family: 'quicksandbook';
+  src: url("../fonts/quicksand/quicksand_book-webfont.woff2") format("woff2"), url("../fonts/quicksand/quicksand_book-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  margin: 0px;
+  font-family: "quicksandbook", Verdana;
+  height: 100%; }
+
+header {
+  padding: 10px;
+  width: 100%;
+  position: fixed;
+  margin-bottom: 10px;
+  background-color: #005882;
+  color: white;
+  top: 0px; }
+
+header div {
+  display: inline;
+  float: left;
+  margin-top: 20px; }
+
+header .button-back {
+  float: left;
+  width: 15%; }
+
+header .title {
+  display: inline;
+  text-align: center;
+  width: 60%; }
+
+header .title h1 {
+  margin: 0; }
+
+header .button-settings {
+  width: 15%;
+  text-align: right; }
+
+.content {
+  margin-top: 50px; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+.tile-2x, .tile-1x {
+  float: left;
+  margin: 5px;
+  padding: 10px; }
+
+.tile-2x {
+  width: calc(50% - 20px); }
+
+.tile-1x {
+  width: calc(100% - 20px); }
+
+input {
+  -webkit-appearance: textfield;
+  background-color: white;
+  -webkit-rtl-ordering: logical;
+  user-select: text;
+  cursor: auto;
+  padding: 10px;
+  border-width: 0px;
+  border-style: inset;
+  border-color: initial;
+  border-image: initial;
+  border-radius: 25px; }
+
+input, textarea, keygen, select, button {
+  box-sizing: border-box;
+  width: calc(100% - 10px);
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 5px;
+  text-shadow: none;
+  display: block;
+  text-align: start;
+  margin: 5px;
+  font: 14px "quicksandbook", Verdana; }
+
+.home {
+  text-transform: lowercase;
+  text-align: center; }
+
+.tile-2x.home, .tile-1x.home {
+  margin: 10px;
+  padding: 0px; }
+
+.innerTile {
+  background-color: #005882;
+  border-radius: 25px;
+  height: inherit;
+  margin: 0 auto; }
+
+.innerTile img {
+  max-height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block; }
+
+p.innerTitle {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 20px; }
+
+div#steps .innerTile {
+  background-color: white;
+  border: solid thick #005882;
+  padding: 20px; }
+
+.away-on {
+  background-color: #005882; }
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 34px;
+  margin: 0 auto; }
+
+/* Hide default HTML checkbox */
+.switch input {
+  display: none; }
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+input:checked + .slider {
+  background-color: #2196F3; }
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3; }
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px); }
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px; }
+
+.slider.round:before {
+  border-radius: 50%; }
+
+.oefeningen.level, .uiterlijk.thema, .evenweg.data {
+  margin: 10px;
+  padding: 5px;
+  background-color: #005882;
+  border-radius: 25px;
+  color: white; }
+
+.uiterlijk.thema#thema1 {
+  background-color: #81d0d6; }
+
+.uiterlijk.thema#thema2 {
+  background-color: #f75a6a; }
+
+.uiterlijk.thema#thema3 {
+  background-color: #005882; }
+
+.settingSelected {
+  margin-left: 60px !important; }
+
+.exercise.labels {
+  float: left; }
+
+.tile-1x.exercise.item {
+  background-size: cover;
+  border-radius: 25px;
+  padding: 10px 0px; }
+
+.tile-1x.exercise.item.watched {
+  padding: 0px; }
+
+.tile-1x.exercise.item h2, .tile-1x.exercise.item p {
+  margin: 5px; }
+
+.exercise.item.info {
+  border-radius: 25px;
+  background-color: rgba(0, 88, 130, 0.7);
+  padding: 5px; }
+
+.watched {
+  opacity: .9; }
+
+/*# sourceMappingURL=theme3.css.map */

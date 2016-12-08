@@ -1,29 +1,14 @@
 @import url("font-awesome.css");
 @font-face {
-  font-family: 'Kelson Sans';
-  src: url("../fonts/KelsonSans/KelsonSans-Light.eot");
-  src: url("../fonts/KelsonSans/KelsonSans-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/KelsonSans/KelsonSans-Light.woff") format("woff"), url("../fonts/KelsonSans/KelsonSans-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Kelson Sans';
-  src: url("../fonts/KelsonSans/KelsonSans-Bold.eot");
-  src: url("../fonts/KelsonSans/KelsonSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/KelsonSans/KelsonSans-Bold.woff") format("woff"), url("../fonts/KelsonSans/KelsonSans-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Kelson Sans';
-  src: url("../fonts/KelsonSans/KelsonSans-Regular.eot");
-  src: url("../fonts/KelsonSans/KelsonSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/KelsonSans/KelsonSans-Regular.woff") format("woff"), url("../fonts/KelsonSans/KelsonSans-Regular.ttf") format("truetype");
+  font-family: 'quicksandbook';
+  src: url("../fonts/quicksand/quicksand_book-webfont.woff2") format("woff2"), url("../fonts/quicksand/quicksand_book-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 /* line 1, scss/_main.scss */
 body {
   margin: 0px;
-  font-family: "Raleway";
+  font-family: "quicksandbook", Verdana;
   height: 100%;
 }
 
@@ -131,16 +116,22 @@ input, textarea, keygen, select, button {
   display: block;
   text-align: start;
   margin: 5px;
-  font: 14px "Raleway";
+  font: 14px "quicksandbook", Verdana;
 }
 
-/* line 3, scss/_pages.scss */
+/* line 2, scss/_pages.scss */
+.home {
+  text-transform: lowercase;
+  text-align: center;
+}
+
+/* line 7, scss/_pages.scss */
 .tile-2x.home, .tile-1x.home {
   margin: 10px;
   padding: 0px;
 }
 
-/* line 8, scss/_pages.scss */
+/* line 12, scss/_pages.scss */
 .innerTile {
   background-color: #81d0d6;
   border-radius: 25px;
@@ -148,7 +139,7 @@ input, textarea, keygen, select, button {
   margin: 0 auto;
 }
 
-/* line 15, scss/_pages.scss */
+/* line 19, scss/_pages.scss */
 .innerTile img {
   max-height: 100%;
   max-width: 100%;
@@ -156,26 +147,97 @@ input, textarea, keygen, select, button {
   display: block;
 }
 
-/* line 22, scss/_pages.scss */
+/* line 26, scss/_pages.scss */
 p.innerTitle {
-  text-align: center;
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 20px;
 }
 
-/* line 29, scss/_pages.scss */
+/* line 33, scss/_pages.scss */
 div#steps .innerTile {
   background-color: white;
   border: solid thick #81d0d6;
+  padding: 20px;
 }
 
-/* line 39, scss/_pages.scss */
+/* line 44, scss/_pages.scss */
 .away-on {
   background-color: #81d0d6;
 }
 
-/* line 44, scss/_pages.scss */
+/* The switch - the box around the slider */
+/* line 49, scss/_pages.scss */
+.switch {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 34px;
+  margin: 0 auto;
+}
+
+/* Hide default HTML checkbox */
+/* line 58, scss/_pages.scss */
+.switch input {
+  display: none;
+}
+
+/* The slider */
+/* line 61, scss/_pages.scss */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/* line 73, scss/_pages.scss */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/* line 85, scss/_pages.scss */
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+/* line 89, scss/_pages.scss */
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+/* line 93, scss/_pages.scss */
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+/* line 100, scss/_pages.scss */
+.slider.round {
+  border-radius: 34px;
+}
+
+/* line 104, scss/_pages.scss */
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* line 109, scss/_pages.scss */
 .oefeningen.level, .uiterlijk.thema, .evenweg.data {
   margin: 10px;
   padding: 5px;
@@ -184,35 +246,58 @@ div#steps .innerTile {
   color: white;
 }
 
-/* line 52, scss/_pages.scss */
+/* line 117, scss/_pages.scss */
 .uiterlijk.thema#thema1 {
   background-color: #81d0d6;
 }
 
-/* line 55, scss/_pages.scss */
+/* line 120, scss/_pages.scss */
 .uiterlijk.thema#thema2 {
   background-color: #f75a6a;
 }
 
-/* line 58, scss/_pages.scss */
+/* line 123, scss/_pages.scss */
 .uiterlijk.thema#thema3 {
   background-color: #005882;
 }
 
-/* line 63, scss/_pages.scss */
+/* line 127, scss/_pages.scss */
+.settingSelected {
+  margin-left: 60px !important;
+}
+
+/* line 132, scss/_pages.scss */
 .exercise.labels {
   float: left;
 }
 
-/* line 68, scss/_pages.scss */
+/* line 137, scss/_pages.scss */
 .tile-1x.exercise.item {
-  background-image: url("https://placeholdit.imgix.net/~text?txtsize=144&txt=1920%C3%971080&w=1920&h=1080");
-  background-size: contain;
+  background-size: cover;
+  border-radius: 25px;
+  padding: 10px 0px;
 }
 
-/* line 73, scss/_pages.scss */
-.exercise.list-level1 {
-  float: left;
+/* line 143, scss/_pages.scss */
+.tile-1x.exercise.item.watched {
+  padding: 0px;
+}
+
+/* line 147, scss/_pages.scss */
+.tile-1x.exercise.item h2, .tile-1x.exercise.item p {
+  margin: 5px;
+}
+
+/* line 151, scss/_pages.scss */
+.exercise.item.info {
+  border-radius: 25px;
+  background-color: rgba(129, 208, 214, 0.7);
+  padding: 5px;
+}
+
+/* line 157, scss/_pages.scss */
+.watched {
+  opacity: .9;
 }
 
 /*# sourceMappingURL=style.css.map */
